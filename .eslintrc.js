@@ -6,7 +6,8 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    'standard'
+    'standard',
+    "eslint:recommended",
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -16,9 +17,9 @@ module.exports = {
   },
   plugins: [
     'react'
-    'prettier'
   ],
   rules: {
-    'prettier/prettier': 'error'
+      'react/jsx-uses-react': 'error',
+      'react/jsx-uses-vars': 'error',
   }
 }
